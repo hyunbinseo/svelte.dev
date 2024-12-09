@@ -320,10 +320,7 @@ namespace AST {
 		/** The 'x' in `bind:x` */
 		name: string;
 		/** The y in `bind:x={y}` */
-		expression:
-			| Identifier
-			| MemberExpression
-			| SequenceExpression;
+		expression: Identifier | MemberExpression;
 	}
 
 	/** A `class:` directive */
