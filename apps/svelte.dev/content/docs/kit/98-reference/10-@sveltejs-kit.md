@@ -2105,7 +2105,9 @@ The [`reroute`](/docs/kit/hooks#Universal-hooks-reroute) hook allows you to modi
 <div class="ts-block">
 
 ```dts
-type Reroute = (event: { url: URL }) => void | string;
+type Reroute = (event: {
+	url: URL;
+}) => MaybePromise<void | string>;
 ```
 
 </div>
