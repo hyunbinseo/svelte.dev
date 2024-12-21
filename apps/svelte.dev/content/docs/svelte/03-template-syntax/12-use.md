@@ -51,8 +51,6 @@ The `Action` interface receives three optional type arguments — a node type (w
 ```svelte
 <!--- file: App.svelte --->
 <script>
-	import { on } from 'svelte/events';
-
 	/**
 	 * @type {import('svelte/action').Action<
 	 * 	HTMLDivElement,
